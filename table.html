@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-        
+        .yellow{
+            background-color: yellow;
+            text-align: center;
+        }
+        .blue{
+            background-color: cornflowerblue;
+            text-align: center;
+        }
+        .green{
+            background-color: aquamarine;
+            text-align: center;
+        }
+        td{
+            text-align: center;
+            background-color: azure;
+        }
+        th{
+            background-color: aqua;
+        }
     </style>
 <head>
     <meta charset="UTF-8">
@@ -9,6 +27,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>TIME TABLE</h1>
     <table border="1">
         <tr>
             <th rowspan="3">day</th>
@@ -24,8 +43,8 @@
         </tr>
         <tr>
             <td rowspan="2">monday</td>
-            <td rowspan="2" >8.00 am</td>
-            <td rowspan="2">5.00 pm</td>
+            <td class="yellow" rowspan="2" >8.00 am</td>
+            <td class="blue" rowspan="2">5.00 pm</td>
             <td colspan="2">introduction to xml</td>
         </tr>
         <tr>
@@ -33,23 +52,23 @@
         </tr>
         <tr>
             <td rowspan="3">tuesday</td>
-            <td>8.00am</td>
-            <td>11.00 am</td>
+            <td class="yellow">8.00am</td>
+            <td class="yellow">11.00 am</td>
             <td rowspan="1.5">XPath</td>
         </tr>
         <tr>
-            <td>11.00am</td>
-            <td>2.00 pm</td>
+            <td class="yellow">11.00am</td>
+            <td class="green" >2.00 pm</td>
             <td rowspan="2">XSL Transformstions</td>
         </tr>
         <tr>
-            <td>2.00 pm</td>
-            <td>5.00 pm</td>
+            <td class="green">2.00 pm</td>
+            <td class="blue">5.00 pm</td>
         </tr>
         <tr>
             <td>wednesday</td>
-            <td>8.00 am</td>
-            <td>12.00pm</td>
+            <td class="yellow">8.00 am</td>
+            <td class="green">12.00pm</td>
             <td>XSL Formating Objects</td>
         </tr>
     </table>
